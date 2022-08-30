@@ -45,7 +45,7 @@ app.post('/api/notes', (req, res) =>{
   res.json(data);
 });
 
-// DELETE Route to remove notes from the db
+
 app.delete('/api/notes/:id', (req, res) => {
   const deleteId = req.params.id;
   let data = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
